@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form method="post" action="login">
+                                {% csrf_token %}
+        <input type="text" class="form-control" name="username" oninput="this.className = ''" placeholder="User Name">
+        <input type="text" class="form-control" name="password" oninput="this.className = ''" placeholder="Password">
+        <input type="Submit">
+    </form>
+
+</body>
+</html>
